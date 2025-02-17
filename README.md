@@ -4,6 +4,8 @@ A distributed system for efficiently collecting all artist data from the Spotify
 
 ## Project Overview
 
+![Preview](preview.gif)
+
 This project implements a systematic approach to collect artist data from Spotify's API, working around the limitation that there's no direct endpoint to get all artists. Instead, it:
 
 1. Generates systematic search strings (0000-zzzz) to exhaustively search the Spotify catalog
