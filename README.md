@@ -191,3 +191,13 @@ The system handles various error scenarios:
 - Invalid responses
 
 Each error type has specific retry and recovery logic to ensure data collection continues reliably.
+
+## Testing
+
+- The test suite is very limited right now and should be expanded upon to have proper coverage. With more time, I would add a lot more coverage of the functionality of this system
+
+To run the tests use:
+
+```
+pytest --cov=services --cov=api tests/ -v
+```
