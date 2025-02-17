@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Celery
+*.db
+*.rdb
+
+.DS_Store
+
 # Distribution / packaging
 .Python
 build/
