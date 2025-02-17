@@ -1,5 +1,4 @@
 # tests/test_search_generator.py
-import pytest
 from services.search_generator import SearchStringGenerator
 
 def test_char_increment():
