@@ -24,22 +24,29 @@ This project implements a systematic approach to collect artist data from Spotif
 ## Project Structure
 
 ```
-├── api.py                 # FastAPI routes and endpoints
-├── celery_config.py       # Celery configuration
-├── tasks.py              # Celery task definitions
+├── api.py                          # FastAPI routes and endpoints
+├── celery_config.py                # Celery configuration
+├── tasks.py                        # Celery task definitions
+├── THOUGHTS.md                     # Thoughts on approach to the project
+├── pytest.ini                      # Config for pytest
 ├── database/
-│   ├── database.py       # Database connection and session management
-│   └── setup.py          # Database initialization
+│   ├── database.py                 # Database connection and session management
+│   └── setup.py                    # Database initialization
 ├── models/
-│   ├── database.py       # SQLAlchemy models
-│   └── spotify.py        # Pydantic models for Spotify data
+│   ├── database.py                 # SQLAlchemy models
+│   └── spotify.py                  # Pydantic models for Spotify data
+├── tests/
+│   ├── conftest.py                 # Test configuration
+│   ├── test_api.py                 # Tests for API
+│   ├── test_database.py            # Tests for Database
+│   └── test_search_generator.py    # Tests for Search Generator
 ├── config/
-│   └── rate_limits.py    # Setting hard coded rate limit thresholds
+│   └── rate_limits.py              # Setting hard coded rate limit thresholds
 ├── services/
-│   ├── spotify.py        # Spotify API client
-│   ├── redis.py          # Redis service for rate limiting
-│   ├── database.py       # Database operations service
-│   └── search_generator.py # Search string generation logic
+│   ├── spotify.py                  # Spotify API client
+│   ├── redis.py                    # Redis service for rate limiting
+│   ├── database.py                 # Database operations service
+│   └── search_generator.py         # Search string generation logic
 ├── frontend/
 │   ├── components/
 │   │   ├── SpotifyDashboard.tsx    # Main dashboard component
